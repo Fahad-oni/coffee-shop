@@ -1,48 +1,103 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2E2622;
+  background-color: #2e2622;
   padding: 0.5rem 4rem;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
-nav h2{
-  color: #E9B44C;
+nav h2 {
+  color: #e9b44c;
 }
 
-nav h2:hover{
+nav h2:hover {
   color: #ffaa00;
 }
 
-nav img{
+nav img {
   width: auto;
   height: 3rem;
   transition: 0.5s;
 }
 
-nav img:hover{
+nav img:hover {
   transform: scale(1.3);
   cursor: grab;
 }
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
   gap: 1.4rem;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: white;
 }
 
+/* hero secton */
+
+.bg-container {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./image/bg-image.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 89vh;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-texts {
+  text-align: center;
+}
+
+.hero-texts span {
+  letter-spacing: 1.4px;
+  color: #e9b44c;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-texts h2 {
+  letter-spacing: 1.4px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fbf6ef;
+  margin: 1.3rem 0;
+}
+
+.hero-texts p {
+  letter-spacing: 1.4px;
+  color: #f0e9dd;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.hero-texts button{
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.7rem;
+  background-color: #ffaa00;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top:1rem ;
+}
